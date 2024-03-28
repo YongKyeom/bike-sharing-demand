@@ -75,11 +75,7 @@ if __name__ == "__main__":
             score_cv = rmse_cv_score(regr, X, y)
 
             logger.info(
-                ".. Cross-validation RMSE score for " f"{i}: {score_cv.mean()}"
-            )
-
-            logger.info(
-                "Cross-Validation RMSE score for Run"
+                ".. Cross-Validation RMSE score for Run"
                 " {}: {:.4f} (std = {:.4f})".format(
                     i, score_cv.mean(), score_cv.std()
                 )
